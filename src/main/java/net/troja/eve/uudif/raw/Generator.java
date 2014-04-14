@@ -8,7 +8,7 @@ public class Generator {
 	super();
     }
 
-    public Generator(String name, String version) {
+    public Generator(final String name, final String version) {
 	super();
 	this.name = name;
 	this.version = version;
@@ -18,7 +18,7 @@ public class Generator {
 	return name;
     }
 
-    public void setName(String name) {
+    public void setName(final String name) {
 	this.name = name;
     }
 
@@ -26,7 +26,7 @@ public class Generator {
 	return version;
     }
 
-    public void setVersion(String version) {
+    public void setVersion(final String version) {
 	this.version = version;
     }
 

@@ -18,32 +18,34 @@ public class RawData extends GeneralData {
     }
 
     public String getResultType() {
-        return resultType;
+	return resultType;
     }
 
-    public void setResultType(String resultType) {
-        this.resultType = resultType;
+    public void setResultType(final String resultType) {
+	this.resultType = resultType;
     }
 
     public Generator getGenerator() {
-        return generator;
+	return generator;
     }
 
-    public void setGenerator(Generator generator) {
-        this.generator = generator;
+    public void setGenerator(final Generator generator) {
+	this.generator = generator;
     }
 
     public List<RawRowset> getRowsets() {
-        return rowsets;
+	return rowsets;
     }
 
-    public void setRowsets(List<RawRowset> rowsets) {
-        this.rowsets = rowsets;
+    public void setRowsets(final List<RawRowset> rowsets) {
+	this.rowsets = rowsets;
     }
 
     @Override
     public String toString() {
 	return "RawData [resultType=" + resultType + ", generator=" + generator
-		+ ", currentTime=" + currentTime + "]";
+		+ ", rowsets=" + rowsets + ", version=" + getVersion()
+		+ ", uploadKeys=" + getUploadKeys() + ", columns="
+		+ getColumns() + ", currentTime=" + getCurrentTime() + "]";
     }
 }

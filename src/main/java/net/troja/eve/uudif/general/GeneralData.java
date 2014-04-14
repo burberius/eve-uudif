@@ -7,24 +7,24 @@ public abstract class GeneralData {
     private String version;
     private List<UploadKey> uploadKeys;
     private List<String> columns;
-    protected Date currentTime;
+    private Date currentTime;
 
     public GeneralData() {
 	super();
     }
 
-    public GeneralData(GeneralData copy) {
+    public GeneralData(final GeneralData copy) {
 	version = copy.getVersion();
 	uploadKeys = copy.getUploadKeys();
 	columns = copy.getColumns();
 	currentTime = copy.getCurrentTime();
     }
-    
+
     public String getVersion() {
 	return version;
     }
 
-    public void setVersion(String version) {
+    public void setVersion(final String version) {
 	this.version = version;
     }
 
@@ -32,7 +32,7 @@ public abstract class GeneralData {
 	return uploadKeys;
     }
 
-    public void setUploadKeys(List<UploadKey> uploadKeys) {
+    public void setUploadKeys(final List<UploadKey> uploadKeys) {
 	this.uploadKeys = uploadKeys;
     }
 
@@ -40,7 +40,7 @@ public abstract class GeneralData {
 	return columns;
     }
 
-    public void setColumns(List<String> columns) {
+    public void setColumns(final List<String> columns) {
 	this.columns = columns;
     }
 
@@ -51,11 +51,11 @@ public abstract class GeneralData {
     }
 
     public Date getCurrentTime() {
-        return currentTime;
+	return currentTime;
     }
 
-    public void setCurrentTime(Date currentTime) {
-        this.currentTime = currentTime;
+    public void setCurrentTime(final Date currentTime) {
+	this.currentTime = currentTime;
     }
 
 

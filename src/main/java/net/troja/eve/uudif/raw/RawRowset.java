@@ -9,11 +9,17 @@ public class RawRowset extends GeneralRowset {
     private List<List<String>> rows;
 
     public List<List<String>> getRows() {
-        return rows;
+	return rows;
     }
 
-    public void setRows(List<List<String>> rows) {
-        this.rows = rows;
+    public void setRows(final List<List<String>> rows) {
+	this.rows = rows;
     }
 
+    @Override
+    public String toString() {
+	return "RawRowset [rows=" + rows + ", generatedAt="
+		+ getGeneratedAt() + ", regionID=" + getRegionID()
+		+ ", typeID=" + getTypeID() + "]";
+    }
 }

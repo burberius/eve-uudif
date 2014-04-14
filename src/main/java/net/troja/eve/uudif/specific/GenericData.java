@@ -14,7 +14,7 @@ public abstract class GenericData<T> extends GeneralData {
 	super();
     }
 
-    public GenericData(GeneralData copy) {
+    public GenericData(final GeneralData copy) {
 	super(copy);
     }
 
@@ -22,7 +22,7 @@ public abstract class GenericData<T> extends GeneralData {
 	return generatorName;
     }
 
-    public void setGeneratorName(String generatorName) {
+    public void setGeneratorName(final String generatorName) {
 	this.generatorName = generatorName;
     }
 
@@ -30,7 +30,7 @@ public abstract class GenericData<T> extends GeneralData {
 	return generatorVersion;
     }
 
-    public void setGeneratorVersion(String generatorVersion) {
+    public void setGeneratorVersion(final String generatorVersion) {
 	this.generatorVersion = generatorVersion;
     }
 
@@ -38,8 +38,12 @@ public abstract class GenericData<T> extends GeneralData {
 	return rowsets;
     }
 
-    public void setRowsets(List<GenericRowset<T>> rowsets) {
+    public void setRowsets(final List<GenericRowset<T>> rowsets) {
 	this.rowsets = rowsets;
+    }
+
+    public void addRowset(final GenericRowset<T> rowset) {
+	rowsets.add(rowset);
     }
 
     @Override
@@ -48,5 +52,4 @@ public abstract class GenericData<T> extends GeneralData {
 		+ ", generatorVersion=" + generatorVersion + ", rowsets="
 		+ rowsets + "]";
     }
-
 }

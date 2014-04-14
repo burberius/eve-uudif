@@ -19,35 +19,35 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
 public class ParsingTest {
-    private ObjectMapper mapper = new ObjectMapper();
-    
+    private final ObjectMapper mapper = new ObjectMapper();
+
     @Before
     public void init() {
 	mapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
 	mapper.enable(DeserializationFeature.ACCEPT_EMPTY_STRING_AS_NULL_OBJECT);
-	mapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX"));
+	mapper.setDateFormat(new SimpleDateFormat(DataConverter.DATETIME_FORMAT));
     }
 
     @Test
     public void testOrderParsing() throws IOException {
-	String file = readFile("src/test/resources/orders.txt");
-	GeneralData data = mapper.readValue(file, RawData.class);
-	String json = mapper.writeValueAsString(data);
+	final String file = readFile("src/test/resources/orders.txt");
+	final GeneralData data = mapper.readValue(file, RawData.class);
+	final String json = mapper.writeValueAsString(data);
 	assertEquals(file.length(), json.length());
     }
 
     @Test
     public void testHistoryParsing() throws IOException {
-	String file = readFile("src/test/resources/history.txt");
-	GeneralData data = mapper.readValue(file, RawData.class);
-	String json = mapper.writeValueAsString(data);
+	final String file = readFile("src/test/resources/history.txt");
+	final GeneralData data = mapper.readValue(file, RawData.class);
+	final String json = mapper.writeValueAsString(data);
 	assertEquals(file.length(), json.length());
     }
-    
-    private String readFile(String file) throws FileNotFoundException, IOException {
-	BufferedReader reader = new BufferedReader(new FileReader(file));
+
+    private String readFile(final String file) throws FileNotFoundException, IOException {
+	final BufferedReader reader = new BufferedReader(new FileReader(file));
 	String line;
-	StringBuilder builder = new StringBuilder();
+	final StringBuilder builder = new StringBuilder();
 	while((line = reader.readLine()) != null) {
 	    builder.append(line);
 	}

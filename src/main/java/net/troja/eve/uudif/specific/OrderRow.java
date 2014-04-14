@@ -23,7 +23,7 @@ public class OrderRow {
 	return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(final double price) {
 	this.price = price;
     }
 
@@ -31,7 +31,7 @@ public class OrderRow {
 	return volRemaining;
     }
 
-    public void setVolRemaining(int volRemaining) {
+    public void setVolRemaining(final int volRemaining) {
 	this.volRemaining = volRemaining;
     }
 
@@ -39,7 +39,7 @@ public class OrderRow {
 	return range;
     }
 
-    public void setRange(int range) {
+    public void setRange(final int range) {
 	this.range = range;
     }
 
@@ -47,7 +47,7 @@ public class OrderRow {
 	return orderId;
     }
 
-    public void setOrderId(long orderId) {
+    public void setOrderId(final long orderId) {
 	this.orderId = orderId;
     }
 
@@ -55,7 +55,7 @@ public class OrderRow {
 	return volEntered;
     }
 
-    public void setVolEntered(int volEntered) {
+    public void setVolEntered(final int volEntered) {
 	this.volEntered = volEntered;
     }
 
@@ -63,7 +63,7 @@ public class OrderRow {
 	return minVolume;
     }
 
-    public void setMinVolume(int minVolume) {
+    public void setMinVolume(final int minVolume) {
 	this.minVolume = minVolume;
     }
 
@@ -71,7 +71,7 @@ public class OrderRow {
 	return bid;
     }
 
-    public void setBid(boolean bid) {
+    public void setBid(final boolean bid) {
 	this.bid = bid;
     }
 
@@ -79,7 +79,7 @@ public class OrderRow {
 	return issueDate;
     }
 
-    public void setIssueDate(Date issueDate) {
+    public void setIssueDate(final Date issueDate) {
 	this.issueDate = issueDate;
     }
 
@@ -87,7 +87,7 @@ public class OrderRow {
 	return duration;
     }
 
-    public void setDuration(int duration) {
+    public void setDuration(final int duration) {
 	this.duration = duration;
     }
 
@@ -95,7 +95,7 @@ public class OrderRow {
 	return stationId;
     }
 
-    public void setStationId(long stationId) {
+    public void setStationId(final long stationId) {
 	this.stationId = stationId;
     }
 
@@ -103,7 +103,7 @@ public class OrderRow {
 	return solarSystemId;
     }
 
-    public void setSolarSystemId(Long solarSystemId) {
+    public void setSolarSystemId(final Long solarSystemId) {
 	this.solarSystemId = solarSystemId;
     }
 

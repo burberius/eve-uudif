@@ -15,7 +15,7 @@ public abstract class GeneralRowset {
 	return generatedAt;
     }
 
-    public void setGeneratedAt(Date generatedAt) {
+    public void setGeneratedAt(final Date generatedAt) {
 	this.generatedAt = generatedAt;
     }
 
@@ -23,7 +23,7 @@ public abstract class GeneralRowset {
 	return regionID;
     }
 
-    public void setRegionID(Integer regionID) {
+    public void setRegionID(final Integer regionID) {
 	this.regionID = regionID;
     }
 
@@ -31,14 +31,13 @@ public abstract class GeneralRowset {
 	return typeID;
     }
 
-    public void setTypeID(Integer typeID) {
+    public void setTypeID(final Integer typeID) {
 	this.typeID = typeID;
     }
 
     @Override
     public String toString() {
-	return "Rowset [generatedAt=" + generatedAt + ", regionId=" + regionID
-		+ ", typeId=" + typeID + "]";
+	return "Rowset [generatedAt=" + generatedAt + ", regionId=" + regionID + ", typeId=" + typeID + "]";
     }
 
 }

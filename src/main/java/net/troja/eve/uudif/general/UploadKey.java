@@ -8,7 +8,7 @@ public class UploadKey {
 	super();
     }
 
-    public UploadKey(String name, String key) {
+    public UploadKey(final String name, final String key) {
 	super();
 	this.name = name;
 	this.key = key;
@@ -18,7 +18,7 @@ public class UploadKey {
 	return name;
     }
 
-    public void setName(String name) {
+    public void setName(final String name) {
 	this.name = name;
     }
 
@@ -26,7 +26,7 @@ public class UploadKey {
 	return key;
     }
 
-    public void setKey(String key) {
+    public void setKey(final String key) {
 	this.key = key;
     }
 

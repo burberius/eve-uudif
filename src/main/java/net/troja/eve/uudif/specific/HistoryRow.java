@@ -18,7 +18,7 @@ public class HistoryRow {
 	return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(final Date date) {
 	this.date = date;
     }
 
@@ -26,7 +26,7 @@ public class HistoryRow {
 	return orders;
     }
 
-    public void setOrders(int orders) {
+    public void setOrders(final int orders) {
 	this.orders = orders;
     }
 
@@ -34,7 +34,7 @@ public class HistoryRow {
 	return low;
     }
 
-    public void setLow(double low) {
+    public void setLow(final double low) {
 	this.low = low;
     }
 
@@ -42,7 +42,7 @@ public class HistoryRow {
 	return high;
     }
 
-    public void setHigh(double high) {
+    public void setHigh(final double high) {
 	this.high = high;
     }
 
@@ -50,7 +50,7 @@ public class HistoryRow {
 	return average;
     }
 
-    public void setAverage(double average) {
+    public void setAverage(final double average) {
 	this.average = average;
     }
 
@@ -58,7 +58,7 @@ public class HistoryRow {
 	return quantity;
     }
 
-    public void setQuantity(int quantity) {
+    public void setQuantity(final int quantity) {
 	this.quantity = quantity;
     }
 
