@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.troja</groupId>
 	<artifactId>eve-uudif</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<name>Eve Online Unified Uploader and Data Interchange Format</name>
 	<url>https://github.com/burberius/eve-uudif</url>
 	<description>Implementation of the Eve Online Unified Uploader and Data Interchange Format described here: http://dev.eve-central.com/unifieduploader/start</description>
