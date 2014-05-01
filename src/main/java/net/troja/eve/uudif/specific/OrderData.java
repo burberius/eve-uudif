@@ -25,6 +25,4 @@ public class OrderData extends GenericData<OrderRow> {
 		+ ", columns=" + getColumns() + ", currentTime="
 		+ getCurrentTime() + "]";
     }
-
-
 }

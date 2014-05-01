@@ -83,7 +83,7 @@ public class DataConverterTest {
 	orderData = new RawData();
 	orderData.setUploadKeys(keys);
 	orderData.setColumns(Arrays.asList(COLUMNS_ORDER));
-	orderData.setResultType("order");
+	orderData.setResultType("orders");
 	orderData.setVersion(FIELD_VERSION);
 	orderData.setGenerator(new Generator(FIELD_GENERATOR_NAME, FIELD_GENERATOR_VERSION));
 	orderData.setCurrentTime(new Date(TEST_DATE));

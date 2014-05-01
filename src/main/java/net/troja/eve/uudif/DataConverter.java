@@ -13,7 +13,7 @@ import net.troja.eve.uudif.specific.OrderData;
 import net.troja.eve.uudif.specific.OrderRow;
 
 public class DataConverter {
-    private static final String TYPE_ORDER = "order";
+    private static final String TYPE_ORDER = "orders";
     public static final String DATETIME_FORMAT = "yyyy-MM-dd'T'HH:mm:ssXXX";
 
     private final SimpleDateFormat dateFormat;

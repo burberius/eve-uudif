@@ -13,7 +13,7 @@ public class OrderRow {
     private Date issueDate;
     private int duration;
     private long stationId;
-    private Long solarSystemId;
+    private long solarSystemId;
 
     public OrderRow() {
 	super();
@@ -99,11 +99,11 @@ public class OrderRow {
 	this.stationId = stationId;
     }
 
-    public Long getSolarSystemId() {
+    public long getSolarSystemId() {
 	return solarSystemId;
     }
 
-    public void setSolarSystemId(final Long solarSystemId) {
+    public void setSolarSystemId(final long solarSystemId) {
 	this.solarSystemId = solarSystemId;
     }
 
