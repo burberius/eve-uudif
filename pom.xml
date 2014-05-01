@@ -9,6 +9,10 @@
 	<description>Implementation of the Eve Online Unified Uploader and Data Interchange Format described here: http://dev.eve-central.com/unifieduploader/start</description>
 	
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
